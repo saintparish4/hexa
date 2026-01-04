@@ -1,0 +1,143 @@
+================================================================================
+EXPERIMENT REPORT
+================================================================================
+
+Experiment Information
+--------------------------------------------------------------------------------
+Experiment ID:    exp-1767562861871-pvzpg11
+Profile:          Burst Attack
+Start Time:       2026-01-04T21:41:01.871Z
+End Time:         2026-01-04T21:41:12.112Z
+Duration:         10.24s
+
+Summary Statistics
+--------------------------------------------------------------------------------
+Total Requests:        1,821
+Successful:            1,000
+Failed:                821
+Blocked:               821
+Rate Limited:          821
+WAF Blocked:           0
+
+Request Rate:          177.81 req/s
+Block Rate:            45.09%
+Error Rate:            45.09%
+
+Latency Statistics (ms)
+--------------------------------------------------------------------------------
+Min:                  11.00
+Max:                  5663.00
+Mean:                 284.01
+Median:               202.00
+P50:                  202.00
+P95:                  286.00
+P99:                  3874.00
+P99.9:                5539.00
+Std Dev:              570.11
+
+Security Check Latency (ms)
+--------------------------------------------------------------------------------
+
+HTTP Status Code Distribution
+--------------------------------------------------------------------------------
+  200:      1,000 (54.91%)
+  429:        821 (45.09%)
+
+Performance vs Expectations
+--------------------------------------------------------------------------------
+Status:              ✗ FAILED
+
+Block Rate:
+  Expected:          85.00%
+  Actual:            45.09%
+  Difference:        -39.91%
+
+Latency:
+  Expected:          50.00ms
+  Actual:            284.01ms
+  Difference:        234.01ms
+
+Time Series Summary (10s intervals)
+--------------------------------------------------------------------------------
+Interval | Requests | Rate (req/s) | Block % | Error % | P95 (ms)
+--------------------------------------------------------------------------------
+  0- 10s  |     1706 |       170.60 |   48.01 |   48.01 |      263
+
+================================================================================
+JSON DATA
+================================================================================
+{
+  "experimentId": "exp-1767562861871-pvzpg11",
+  "profileName": "Burst Attack",
+  "startTime": 1767562861871,
+  "endTime": 1767562872112,
+  "duration": 10.241,
+  "summary": {
+    "timestamp": 1767562872112,
+    "windowSize": 0,
+    "totalRequests": 1821,
+    "successfulRequests": 1000,
+    "failedRequests": 821,
+    "blockedRequests": 821,
+    "rateLimitedRequests": 821,
+    "wafBlockedRequests": 0,
+    "requestRate": 177.81466653647107,
+    "errorRate": 45.08511806699615,
+    "blockRate": 45.08511806699615,
+    "latency": {
+      "min": 11,
+      "max": 5663,
+      "mean": 284.0142778693026,
+      "median": 202,
+      "p50": 202,
+      "p95": 286,
+      "p99": 3874,
+      "p999": 5539,
+      "stdDev": 570.1074590791939
+    },
+    "securityLatency": {},
+    "statusCodes": {
+      "200": 1000,
+      "429": 821
+    }
+  },
+  "timeSeries": [
+    {
+      "timestamp": 1767562872114,
+      "windowSize": 10,
+      "totalRequests": 1706,
+      "successfulRequests": 887,
+      "failedRequests": 819,
+      "blockedRequests": 819,
+      "rateLimitedRequests": 819,
+      "wafBlockedRequests": 0,
+      "requestRate": 170.6,
+      "errorRate": 48.007033997655334,
+      "blockRate": 48.007033997655334,
+      "latency": {
+        "min": 30,
+        "max": 320,
+        "mean": 187.56740914419694,
+        "median": 200,
+        "p50": 200,
+        "p95": 263,
+        "p99": 281,
+        "p999": 313,
+        "stdDev": 54.72240908660496
+      },
+      "securityLatency": {},
+      "statusCodes": {
+        "200": 887,
+        "429": 819
+      }
+    }
+  ],
+  "errors": [],
+  "comparison": {
+    "expectedBlockRate": 85,
+    "actualBlockRate": 45.08511806699615,
+    "expectedLatency": 50,
+    "actualLatency": 284.0142778693026,
+    "passed": false
+  }
+}

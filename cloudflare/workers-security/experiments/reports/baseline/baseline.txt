@@ -1,0 +1,440 @@
+================================================================================
+EXPERIMENT REPORT
+================================================================================
+
+Experiment Information
+--------------------------------------------------------------------------------
+Experiment ID:    exp-1767562548870-xfka9oq
+Profile:          Legitimate Traffic
+Start Time:       2026-01-04T21:35:48.870Z
+End Time:         2026-01-04T21:37:48.994Z
+Duration:         120.12s
+
+Summary Statistics
+--------------------------------------------------------------------------------
+Total Requests:        19,352
+Successful:            8,706
+Failed:                10,646
+Blocked:               10,646
+Rate Limited:          10,646
+WAF Blocked:           0
+
+Request Rate:          161.10 req/s
+Block Rate:            55.01%
+Error Rate:            55.01%
+
+Latency Statistics (ms)
+--------------------------------------------------------------------------------
+Min:                  2.00
+Max:                  99.00
+Mean:                 25.16
+Median:               23.00
+P50:                  23.00
+P95:                  54.00
+P99:                  73.00
+P99.9:                88.00
+Std Dev:              15.17
+
+Security Check Latency (ms)
+--------------------------------------------------------------------------------
+
+HTTP Status Code Distribution
+--------------------------------------------------------------------------------
+  200:      8,706 (44.99%)
+  429:     10,646 (55.01%)
+
+Performance vs Expectations
+--------------------------------------------------------------------------------
+Status:              ✗ FAILED
+
+Block Rate:
+  Expected:          5.00%
+  Actual:            55.01%
+  Difference:        50.01%
+
+Latency:
+  Expected:          100.00ms
+  Actual:            25.16ms
+  Difference:        -74.84ms
+
+Time Series Summary (10s intervals)
+--------------------------------------------------------------------------------
+Interval | Requests | Rate (req/s) | Block % | Error % | P95 (ms)
+--------------------------------------------------------------------------------
+  0- 10s  |        0 |         0.00 |    0.00 |    0.00 |        0
+ 10- 20s  |        0 |         0.00 |    0.00 |    0.00 |        0
+ 20- 30s  |        0 |         0.00 |    0.00 |    0.00 |        0
+ 30- 40s  |        0 |         0.00 |    0.00 |    0.00 |        0
+ 40- 50s  |        0 |         0.00 |    0.00 |    0.00 |        0
+ 50- 60s  |        0 |         0.00 |    0.00 |    0.00 |        0
+ 60- 70s  |        0 |         0.00 |    0.00 |    0.00 |        0
+ 70- 80s  |        0 |         0.00 |    0.00 |    0.00 |        0
+ 80- 90s  |        0 |         0.00 |    0.00 |    0.00 |        0
+ 90-100s  |        0 |         0.00 |    0.00 |    0.00 |        0
+100-110s  |        0 |         0.00 |    0.00 |    0.00 |        0
+110-120s  |     1599 |       159.90 |   63.29 |   63.29 |       55
+
+================================================================================
+JSON DATA
+================================================================================
+{
+  "experimentId": "exp-1767562548870-xfka9oq",
+  "profileName": "Legitimate Traffic",
+  "startTime": 1767562548870,
+  "endTime": 1767562668994,
+  "duration": 120.124,
+  "summary": {
+    "timestamp": 1767562668994,
+    "windowSize": 0,
+    "totalRequests": 19352,
+    "successfulRequests": 8706,
+    "failedRequests": 10646,
+    "blockedRequests": 10646,
+    "rateLimitedRequests": 10646,
+    "wafBlockedRequests": 0,
+    "requestRate": 161.10019646365424,
+    "errorRate": 55.01240181893344,
+    "blockRate": 55.01240181893344,
+    "latency": {
+      "min": 2,
+      "max": 99,
+      "mean": 25.163032244729227,
+      "median": 23,
+      "p50": 23,
+      "p95": 54,
+      "p99": 73,
+      "p999": 88,
+      "stdDev": 15.170126307523834
+    },
+    "securityLatency": {},
+    "statusCodes": {
+      "200": 8706,
+      "429": 10646
+    }
+  },
+  "timeSeries": [
+    {
+      "timestamp": 1767562669027,
+      "windowSize": 10,
+      "totalRequests": 0,
+      "successfulRequests": 0,
+      "failedRequests": 0,
+      "blockedRequests": 0,
+      "rateLimitedRequests": 0,
+      "wafBlockedRequests": 0,
+      "requestRate": 0,
+      "errorRate": 0,
+      "blockRate": 0,
+      "latency": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "median": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "p999": 0,
+        "stdDev": 0
+      },
+      "securityLatency": {},
+      "statusCodes": {}
+    },
+    {
+      "timestamp": 1767562669028,
+      "windowSize": 10,
+      "totalRequests": 0,
+      "successfulRequests": 0,
+      "failedRequests": 0,
+      "blockedRequests": 0,
+      "rateLimitedRequests": 0,
+      "wafBlockedRequests": 0,
+      "requestRate": 0,
+      "errorRate": 0,
+      "blockRate": 0,
+      "latency": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "median": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "p999": 0,
+        "stdDev": 0
+      },
+      "securityLatency": {},
+      "statusCodes": {}
+    },
+    {
+      "timestamp": 1767562669029,
+      "windowSize": 10,
+      "totalRequests": 0,
+      "successfulRequests": 0,
+      "failedRequests": 0,
+      "blockedRequests": 0,
+      "rateLimitedRequests": 0,
+      "wafBlockedRequests": 0,
+      "requestRate": 0,
+      "errorRate": 0,
+      "blockRate": 0,
+      "latency": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "median": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "p999": 0,
+        "stdDev": 0
+      },
+      "securityLatency": {},
+      "statusCodes": {}
+    },
+    {
+      "timestamp": 1767562669029,
+      "windowSize": 10,
+      "totalRequests": 0,
+      "successfulRequests": 0,
+      "failedRequests": 0,
+      "blockedRequests": 0,
+      "rateLimitedRequests": 0,
+      "wafBlockedRequests": 0,
+      "requestRate": 0,
+      "errorRate": 0,
+      "blockRate": 0,
+      "latency": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "median": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "p999": 0,
+        "stdDev": 0
+      },
+      "securityLatency": {},
+      "statusCodes": {}
+    },
+    {
+      "timestamp": 1767562669029,
+      "windowSize": 10,
+      "totalRequests": 0,
+      "successfulRequests": 0,
+      "failedRequests": 0,
+      "blockedRequests": 0,
+      "rateLimitedRequests": 0,
+      "wafBlockedRequests": 0,
+      "requestRate": 0,
+      "errorRate": 0,
+      "blockRate": 0,
+      "latency": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "median": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "p999": 0,
+        "stdDev": 0
+      },
+      "securityLatency": {},
+      "statusCodes": {}
+    },
+    {
+      "timestamp": 1767562669030,
+      "windowSize": 10,
+      "totalRequests": 0,
+      "successfulRequests": 0,
+      "failedRequests": 0,
+      "blockedRequests": 0,
+      "rateLimitedRequests": 0,
+      "wafBlockedRequests": 0,
+      "requestRate": 0,
+      "errorRate": 0,
+      "blockRate": 0,
+      "latency": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "median": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "p999": 0,
+        "stdDev": 0
+      },
+      "securityLatency": {},
+      "statusCodes": {}
+    },
+    {
+      "timestamp": 1767562669030,
+      "windowSize": 10,
+      "totalRequests": 0,
+      "successfulRequests": 0,
+      "failedRequests": 0,
+      "blockedRequests": 0,
+      "rateLimitedRequests": 0,
+      "wafBlockedRequests": 0,
+      "requestRate": 0,
+      "errorRate": 0,
+      "blockRate": 0,
+      "latency": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "median": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "p999": 0,
+        "stdDev": 0
+      },
+      "securityLatency": {},
+      "statusCodes": {}
+    },
+    {
+      "timestamp": 1767562669030,
+      "windowSize": 10,
+      "totalRequests": 0,
+      "successfulRequests": 0,
+      "failedRequests": 0,
+      "blockedRequests": 0,
+      "rateLimitedRequests": 0,
+      "wafBlockedRequests": 0,
+      "requestRate": 0,
+      "errorRate": 0,
+      "blockRate": 0,
+      "latency": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "median": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "p999": 0,
+        "stdDev": 0
+      },
+      "securityLatency": {},
+      "statusCodes": {}
+    },
+    {
+      "timestamp": 1767562669031,
+      "windowSize": 10,
+      "totalRequests": 0,
+      "successfulRequests": 0,
+      "failedRequests": 0,
+      "blockedRequests": 0,
+      "rateLimitedRequests": 0,
+      "wafBlockedRequests": 0,
+      "requestRate": 0,
+      "errorRate": 0,
+      "blockRate": 0,
+      "latency": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "median": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "p999": 0,
+        "stdDev": 0
+      },
+      "securityLatency": {},
+      "statusCodes": {}
+    },
+    {
+      "timestamp": 1767562669031,
+      "windowSize": 10,
+      "totalRequests": 0,
+      "successfulRequests": 0,
+      "failedRequests": 0,
+      "blockedRequests": 0,
+      "rateLimitedRequests": 0,
+      "wafBlockedRequests": 0,
+      "requestRate": 0,
+      "errorRate": 0,
+      "blockRate": 0,
+      "latency": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "median": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "p999": 0,
+        "stdDev": 0
+      },
+      "securityLatency": {},
+      "statusCodes": {}
+    },
+    {
+      "timestamp": 1767562669031,
+      "windowSize": 10,
+      "totalRequests": 0,
+      "successfulRequests": 0,
+      "failedRequests": 0,
+      "blockedRequests": 0,
+      "rateLimitedRequests": 0,
+      "wafBlockedRequests": 0,
+      "requestRate": 0,
+      "errorRate": 0,
+      "blockRate": 0,
+      "latency": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "median": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "p999": 0,
+        "stdDev": 0
+      },
+      "securityLatency": {},
+      "statusCodes": {}
+    },
+    {
+      "timestamp": 1767562669032,
+      "windowSize": 10,
+      "totalRequests": 1599,
+      "successfulRequests": 587,
+      "failedRequests": 1012,
+      "blockedRequests": 1012,
+      "rateLimitedRequests": 1012,
+      "wafBlockedRequests": 0,
+      "requestRate": 159.9,
+      "errorRate": 63.2895559724828,
+      "blockRate": 63.2895559724828,
+      "latency": {
+        "min": 2,
+        "max": 88,
+        "mean": 24.82426516572858,
+        "median": 23,
+        "p50": 23,
+        "p95": 55,
+        "p99": 71,
+        "p999": 87,
+        "stdDev": 14.842378404173102
+      },
+      "securityLatency": {},
+      "statusCodes": {
+        "200": 587,
+        "429": 1012
+      }
+    }
+  ],
+  "errors": [],
+  "comparison": {
+    "expectedBlockRate": 5,
+    "actualBlockRate": 55.01240181893344,
+    "expectedLatency": 100,
+    "actualLatency": 25.163032244729227,
+    "passed": false
+  }
+}

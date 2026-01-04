@@ -73,7 +73,7 @@ export default {
       const url = new URL(request.url);
 
       // WAF check - block malicious requests early
-      const wafResult = checkWAF(request);
+      const wafResult = await checkWAF(request);
       if (wafResult.blocked) {
         const response = createWAFBlockResponse(wafResult);
         logTrace(trace, { waf: "blocked", rule: wafResult.rule?.id });
