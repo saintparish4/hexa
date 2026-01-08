@@ -20,13 +20,13 @@ class SlidingWindowRateLimiter(
     windowSize: Duration 
 ) extends RateLimiter {
 
-    require(maxRequests > 0, "maxRequests must be positive") 
-    require(!windowSize.isNegative && !windowSize.isZero, "windowSize must be positive") 
+  require(maxRequests > 0, "maxRequests must be positive") 
+  require(!windowSize.isNegative && !windowSize.isZero, "windowSize must be positive") 
 
-    // Per-key storage: each key has an atomic reference to a vector of timestamps 
-    private val keyTimestamps = new ConcurrentHashMap[String, AtomicReference[Vector[Instant]]]()
+  // Per-key storage: each key has an atomic reference to a vector of timestamps 
+  private val keyTimestamps = new ConcurrentHashMap[String, AtomicReference[Vector[Instant]]]()
 
-    /**
+  /**
    * Determines if a request is allowed using a sliding window algorithm.
    * 
    * Algorithm:

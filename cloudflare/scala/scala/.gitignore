@@ -18,6 +18,9 @@ local.sbt
 # Bloop
 .bsp
 
+# Scala CLI
+.scala-build/
+
 # VS Code
 .vscode/
 
