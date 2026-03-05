@@ -4,7 +4,6 @@
 
 Hexa sits between your dApp clients and your backend RPC node, enforcing authentication, rate limiting, calldata-level threat scoring, and blocklist checks — all at the edge, under 10ms added latency.
 
-[![CI](https://github.com/OrdinalScale/hexa/actions/workflows/ci.yml/badge.svg)](https://github.com/OrdinalScale/hexa/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ---
